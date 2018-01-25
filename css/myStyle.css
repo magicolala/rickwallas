@@ -62,8 +62,8 @@ box-shadow: -1px -1px 60px -14px rgba(0,0,0,0.75);
 .animation-right {
     -webkit-animation-name: kenny-right;
     animation-name: kenny-right;
-    -webkit-animation-duration: 10s;
-    animation-duration: 10s;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
 }
