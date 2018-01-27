@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
 body, html {
     height: 100%;
     overflow: hidden;
@@ -9,6 +11,7 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .footer-player {
@@ -57,7 +60,20 @@ body {
     /*1px -1px 0 #000,*/
     /*-1px 1px 0 #000,*/
     /*1px 1px 0 #000;*/
-    font-weight: bolder;
+    transition: box-shadow .3s;
+    font-size: 1.4em;
+}
+
+.btn-chevron {    
+    cursor: pointer;
+}
+
+.fa-chevron-up {
+    transition: transform 700ms;
+}
+
+.btn:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
 }
 
 .deblur:hover .menu-choice-music {
@@ -103,6 +119,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.bounce-hover:hover {
+      animation-name: bounce-hover;
+      -moz-animation-name: bounce-hover;
 }
 
 /*------------------ANIMATION--------------------------------------*/
@@ -347,9 +368,8 @@ body {
         transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
     }
     0% {
-        opacity: 0;
-        -webkit-transform: scale3d(.3, .3, .3);
-        transform: scale3d(.3, .3, .3);
+        -webkit-transform: scale3d(.6, .6, .6);
+        transform: scale3d(.6, .6, .6);
     }
     20% {
         -webkit-transform: scale3d(1.1, 1.1, 1.1);
@@ -381,9 +401,8 @@ body {
         transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
     }
     0% {
-        opacity: 0;
-        -webkit-transform: scale3d(.3, .3, .3);
-        transform: scale3d(.3, .3, .3);
+        -webkit-transform: scale3d(.6, .6, .6);
+        transform: scale3d(.6, .6, .6);
     }
     20% {
         -webkit-transform: scale3d(1.1, 1.1, 1.1);
@@ -408,4 +427,22 @@ body {
         transform: scale3d(1, 1, 1);
     }
 } 
+
+@keyframes bounce-hover {
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  50%,
+  55% {
+/*
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+*/
+  }
+
+  to {    
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+}
 

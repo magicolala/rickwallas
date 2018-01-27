@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>L2T</title>
+    <title>Rick Wallas</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <link rel="stylesheet" href="./css/myStyle.css"/>
 
 </head>
@@ -36,23 +37,29 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-3 deblur">
-            <div class="menu-choice-music animation-right">
-                <div class="btn shake-slow shake-constant ">
+            <div class="menu-choice-music" id="menu-music">
+                <div class="btn bounce-hover bounceIn">
                     Deep House
                 </div>
-                <div class="btn animation-scale bounceIn">
+                <div class="btn bounce-hover bounceIn">
                     House
                 </div>
-                <div class="btn animation-scale bounceIn">
+                <div class="btn bounce-hover bounceIn">
                     Techno
                 </div>
-                <div class="btn animation-scale bounceIn">
+                <div class="btn bounce-hover bounceIn">
                     Hip-Hop
                 </div>
-                <div class="btn animation-scale bounceIn">
+                <div class="btn bounce-hover bounceIn">
                     Divers
                 </div>
+            </div>            
+            <div class="bounce-hover bounceIn btn-chevron" id="chevron-choice-music" style="display: flex; justify-content: center; margin-left: 10%;">
+                <i class="fas fa-chevron-up fa-2x" style="color: white;"></i>
             </div>
+        </div>
+        <div class="col-md-9">
+            
         </div>
     </div>
 </div>
@@ -67,9 +74,13 @@
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 <script src="js/dimension.js"></script>
 <script defer src="js/fontawesome-all.min.js"></script>
 </body>
