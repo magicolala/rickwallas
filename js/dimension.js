@@ -10,8 +10,20 @@ $(document).ready(function(){
     
     // FEATURES    
     $(document).on('click', '#chevron-choice-music', function() {
-        $('#menu-music').slideUp(700);
-        $('.fa-chevron-up').css('transform','rotate(180deg)');
+        if ($('#menu-music').hasClass('open-menu'))
+        {
+            $('#menu-music').slideUp(700);
+            $('#menu-music').removeClass('open-menu');
+            $('#menu-music').addClass('close-menu');
+            $('.fa-chevron-up').css('transform','rotate(180deg)');
+        }
+        else
+        {
+            $('#menu-music').slideDown(700);
+            $('#menu-music').removeClass('close-menu');
+            $('#menu-music').addClass('open-menu');
+            $('.fa-chevron-up').css('transform','none');
+        }
     });
 });
 

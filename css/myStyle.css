@@ -64,7 +64,7 @@ body {
     font-size: 1.4em;
 }
 
-.btn-chevron {    
+.btn-chevron {
     cursor: pointer;
 }
 
@@ -73,7 +73,7 @@ body {
 }
 
 .btn:hover {
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
 }
 
 .deblur:hover .menu-choice-music {
@@ -122,8 +122,8 @@ body {
 }
 
 .bounce-hover:hover {
-      animation-name: bounce-hover;
-      -moz-animation-name: bounce-hover;
+    animation-name: bounce-hover;
+    -moz-animation-name: bounce-hover;
 }
 
 /*------------------ANIMATION--------------------------------------*/
@@ -426,23 +426,23 @@ body {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
     }
-} 
+}
 
 @keyframes bounce-hover {
-  20% {
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
+    20% {
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
 
-  50%,
-  55% {
-/*
-    opacity: 1;
-    transform: scale3d(1, 1, 1);
-*/
-  }
+    50%,
+    55% {
+        /*
+            opacity: 1;
+            transform: scale3d(1, 1, 1);
+        */
+    }
 
-  to {    
-    transform: scale3d(0.9, 0.9, 0.9);
-  }
+    to {
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
 }
 
